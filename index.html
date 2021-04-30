@@ -1,17 +1,20 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
 <title>Eletrônica Online</title>
+<link rel="manifest" href="/manifest.json">
+<link rel="icon" href="icons/128.png">
 </head>
 <body>
-<h1>Olá Mundo</h1>
+<h1>Em Construção</h1>
 <script>
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/sw.js')
         .then(function () {
-          console.log('service worker registered');
+          console.log('service worker registrado');
         })
         .catch(function () {
-          console.warn('service worker failed');
+          console.warn('falha no registro do service worker');
         });
     }
   </script>
